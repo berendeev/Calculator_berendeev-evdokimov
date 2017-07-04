@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Calculator
 {
-    class Factory
+    class FactoryForTwoArguments
     {
-        public static IOperations CreateCalculator(string name)
+        public static IOperationsForTwoArguments CreateCalculator(string name)
         {
             switch (name)
             {

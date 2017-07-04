@@ -22,9 +22,16 @@ namespace Calculator
         {
             double numberOne = Convert.ToDouble(tb_InputOne.Text);
             double numberTwo = Convert.ToDouble(tb_InputTwo.Text);
-            IOperations calculator = Factory.CreateCalculator(((Button)sender).Name);
+            IOperationsForTwoArguments calculator = FactoryForTwoArguments.CreateCalculator(((Button)sender).Name);
             lbl_Equally.Text = Convert.ToString(calculator.Calculate(numberOne, numberTwo));
             
+        }
+
+        private void calculateForOneArgument(object sender, EventArgs e)
+        {
+            double argument = Convert.ToDouble(tb_InputOne.Text);
+            IOperationsForOneArgument calculator = FactoryForOneArgument.CreateCalculator(((Button)sender).Name);
+            lbl_Equally.Text = Convert.ToString(calculator.Calculate(argument));
         }
     }
 

@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Calculator
 {
-    class Division : IOperationsForTwoArguments
+    class Sin : IOperationsForOneArgument
     {
-        public double Calculate(double firstArgument, double secondArgument)
+        public double Calculate(double Argument)
         {
-            return firstArgument / secondArgument;
+            return Math.Sin(Argument);
         }
     }
 }

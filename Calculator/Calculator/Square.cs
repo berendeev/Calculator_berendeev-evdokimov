@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace Calculator
 {
-    interface IOperations
+    class Square : IOperationsForOneArgument
     {
-       double Calculate(double firstArgumen, double seconArgument);
+        public double Calculate(double Argument)
+        {
+            return Math.Pow(Argument, 2);
+        }
     }
 }
