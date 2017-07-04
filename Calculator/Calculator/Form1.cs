@@ -17,7 +17,12 @@ namespace Calculator
             InitializeComponent();
         }
 
-       
-
+        private void btn_Plus_Click(object sender, EventArgs e)
+        {
+            double numberOne = Convert.ToDouble(tb_InputOne.Text);
+            double numberTwo = Convert.ToDouble(tb_InputTwo.Text);
+            lbl_Equally.Text = Convert.ToString(numberOne + numberTwo);
+        }
+        
     }
 }

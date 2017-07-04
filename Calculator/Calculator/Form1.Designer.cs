@@ -67,6 +67,7 @@
             this.btn_Plus.TabIndex = 3;
             this.btn_Plus.Text = "+";
             this.btn_Plus.UseVisualStyleBackColor = true;
+            this.btn_Plus.Click += new System.EventHandler(this.btn_Plus_Click);
             // 
             // btn_Minus
             // 
