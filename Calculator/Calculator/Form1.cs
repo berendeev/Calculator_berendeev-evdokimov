@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Calculator.OneArgument;
 using Calculator.TwoArgumets;
@@ -24,8 +17,16 @@ namespace Calculator
         {
             double numberOne = Convert.ToDouble(tb_InputOne.Text);
             double numberTwo = Convert.ToDouble(tb_InputTwo.Text);
-            IOperationsForTwoArguments calculator = FactoryForTwoArguments.CreateCalculator(((Button)sender).Name);
-            lbl_Equally.Text = Convert.ToString(calculator.Calculate(numberOne, numberTwo));
+            try
+            {
+                IOperationsForTwoArguments calculator = FactoryForTwoArguments.CreateCalculator(((Button)sender).Name);
+                lbl_Equally.Text = Convert.ToString(calculator.Calculate(numberOne, numberTwo));
+            }
+            catch (Exception exc)
+            {
+                lbl_Equally.Text = exc.Message;
+            }
+            
             
         }
 
