@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="OneArgument\ArccosTest.cs" />
     <Compile Include="OneArgument\ArcsinTest.cs" />
+    <Compile Include="OneArgument\ArctgTest.cs" />
     <Compile Include="OneArgument\FactoryForOneArgumentTest.cs" />
     <Compile Include="OneArgument\Power2XTest.cs" />
     <Compile Include="OneArgument\SquareTest.cs" />
