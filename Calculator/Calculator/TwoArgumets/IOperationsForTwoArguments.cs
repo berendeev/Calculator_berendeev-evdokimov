@@ -1,6 +1,6 @@
 ﻿namespace Calculator.TwoArgumets
 {
-    interface IOperationsForTwoArguments
+    public interface IOperationsForTwoArguments
     {
        double Calculate(double firstArgumen, double seconArgument);
     }
