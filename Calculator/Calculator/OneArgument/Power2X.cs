@@ -2,7 +2,7 @@
 
 namespace Calculator.OneArgument
 {
-    class Power2X : IOperationsForOneArgument
+    public class Power2X : IOperationsForOneArgument
     {
         public double Calculate(double Argument)
         {

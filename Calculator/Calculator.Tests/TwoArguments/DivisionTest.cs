@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using Calculator.TwoArgumets;
@@ -8,16 +9,23 @@ using NUnit.Framework;
 
 namespace Calculator.Tests.TwoArguments
 {
-    public class SubtractionTest
+    public class DivisionTest
     {
-        [TestCase(0, 0, 0)]
-        [TestCase(7, 4, 3)]
-        [TestCase(15, 4, 11)]
+        [TestCase(8, 2, 4)]
+        [TestCase(48, 48, 1)]
+        [TestCase(8, 4, 2)]
         public void CalculateTest(double firstArgument, double seconArgument, double expected)
         {
-            IOperationsForTwoArguments calculator = new Subtraction();
+            
+            IOperationsForTwoArguments calculator = new Division();
             double result = calculator.Calculate(firstArgument, seconArgument);
             Assert.AreEqual(expected, result);
+        }
+        [Test]
+        public void DivisionByZeroTest()
+        {
+            Assert.Throws<Exception>(() => FactoryForTwoArguments.CreateCalculator("WrongOperation"));
+
         }
     }
 }

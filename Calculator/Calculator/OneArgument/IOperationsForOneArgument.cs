@@ -1,6 +1,6 @@
 ﻿namespace Calculator.OneArgument
 {
-    interface IOperationsForOneArgument
+    public interface IOperationsForOneArgument
     {
         double Calculate(double Argument);
     }

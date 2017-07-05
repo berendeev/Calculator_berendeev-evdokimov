@@ -2,7 +2,7 @@
 
 namespace Calculator.OneArgument
 {
-    class Sin : IOperationsForOneArgument
+    public class Sin : IOperationsForOneArgument
     {
         public double Calculate(double Argument)
         {

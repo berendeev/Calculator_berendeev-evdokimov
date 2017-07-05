@@ -2,7 +2,7 @@
 
 namespace Calculator.TwoArgumets
 {
-    class FactoryForTwoArguments
+    public class FactoryForTwoArguments
     {
         public static IOperationsForTwoArguments CreateCalculator(string name)
         {

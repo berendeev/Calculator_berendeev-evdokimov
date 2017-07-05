@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Calculator.TwoArgumets
 {
-    class LogxY : IOperationsForTwoArguments
+    public class LogxY : IOperationsForTwoArguments
     {
         public double Calculate(double firstArgument, double secondArgument)
         {

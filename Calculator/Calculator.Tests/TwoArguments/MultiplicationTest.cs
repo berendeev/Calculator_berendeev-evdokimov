@@ -13,11 +13,11 @@ namespace Calculator.Tests.TwoArguments
         [TestCase(2, 2, 4)]
         [TestCase(5, 2, 10)]
         [TestCase(9, 4, 36)]
-        public void CalculateTest(double firstArgumen, double seconArgument, double expected)
+        public void CalculateTest(double firstArgument, double seconArgument, double expected)
         {
             {
                 IOperationsForTwoArguments calculator = new Multiplication();
-                double result = calculator.Calculate(firstArgumen, seconArgument);
+                double result = calculator.Calculate(firstArgument, seconArgument);
                 Assert.AreEqual(expected, result);
 
             }
