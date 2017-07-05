@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Calculator.OneArgument;
+using Calculator.TwoArgumets;
 
 namespace Calculator
 {
@@ -18,7 +20,7 @@ namespace Calculator
         }
 
        
-        private void calculation(object sender, EventArgs e)
+        private void calculateForTwoArgument(object sender, EventArgs e)
         {
             double numberOne = Convert.ToDouble(tb_InputOne.Text);
             double numberTwo = Convert.ToDouble(tb_InputTwo.Text);

@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Calculator
+namespace Calculator.OneArgument
 {
-    class Power2X : IOperationsForOneArgument
+    class Arcsin : IOperationsForOneArgument
     {
         public double Calculate(double Argument)
         {
-           return Math.Pow(2, Argument);
+            return Math.Asin(Argument);
         }
     }
 }

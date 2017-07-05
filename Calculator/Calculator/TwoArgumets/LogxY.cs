@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Calculator
+namespace Calculator.TwoArgumets
 {
-    class Multiplication : IOperationsForTwoArguments
+    class LogxY : IOperationsForTwoArguments
     {
         public double Calculate(double firstArgument, double secondArgument)
         {
-            return firstArgument * secondArgument;
+            return Math.Log(secondArgument, firstArgument);
         }
     }
 }

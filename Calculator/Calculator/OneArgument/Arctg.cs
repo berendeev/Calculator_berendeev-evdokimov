@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Calculator
+namespace Calculator.OneArgument
 {
-    class Square : IOperationsForOneArgument
+    class Arctg : IOperationsForOneArgument
     {
         public double Calculate(double Argument)
         {
-            return Math.Pow(Argument, 2);
+            return Math.Atan(Argument);
         }
     }
 }

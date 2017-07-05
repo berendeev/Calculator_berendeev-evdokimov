@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Calculator
+namespace Calculator.TwoArgumets
 {
-    public class Addition : IOperationsForTwoArguments
+    class PowerXrevY : IOperationsForTwoArguments
     {
         public double Calculate(double firstArgument, double secondArgument)
         {
-            return firstArgument + secondArgument;
+            return Math.Pow(firstArgument, 1 / secondArgument);
         }
     }
 }

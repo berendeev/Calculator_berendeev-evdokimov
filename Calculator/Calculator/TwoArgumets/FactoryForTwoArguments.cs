@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Calculator
+namespace Calculator.TwoArgumets
 {
     class FactoryForTwoArguments
     {
@@ -14,16 +10,18 @@ namespace Calculator
             {
                 case "btn_Plus":
                     return new Addition();
-                    break;
                 case "btn_Minus":
                     return new Subtraction();
-                    break;
                 case "btn_Multiply":
                     return new Multiplication();
-                    break;
                 case "btn_Divide":
                     return new Division();
-                    break;
+                case "btn_PowerXY":
+                    return new PowerXY();
+                case "btn_PowerXrevY":
+                    return new PowerXrevY();
+                case "btn_LogxY":
+                    return new LogxY();
                 default:
                     throw new Exception("Неизвестная операция");
             }

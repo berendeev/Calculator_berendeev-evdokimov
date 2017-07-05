@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Calculator
+namespace Calculator.OneArgument
 {
     class FactoryForOneArgument
     {
@@ -20,6 +16,14 @@ namespace Calculator
                     return new Sin();
                 case "btn_Cos":
                     return new Cos();
+                case "btn_Tg":
+                    return new Tg();
+                case "btn_Arcsin":
+                    return new Arcsin();
+                case "btn_Arccos":
+                    return new Arccos();
+                case "btn_Arctg":
+                    return new Arctg();
                 default:
                     throw new Exception("Неизвестная операция");
             }
