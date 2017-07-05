@@ -54,6 +54,7 @@
     <Compile Include="OneArgument\Log2Test.cs" />
     <Compile Include="OneArgument\MinusXTest.cs" />
     <Compile Include="OneArgument\Power2XTest.cs" />
+    <Compile Include="OneArgument\SinTest.cs" />
     <Compile Include="OneArgument\SquareTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TwoArguments\AdditionTest.cs" />
