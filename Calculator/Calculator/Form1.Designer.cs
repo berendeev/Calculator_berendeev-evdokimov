@@ -46,6 +46,11 @@
             this.btn_Arcsin = new System.Windows.Forms.Button();
             this.btn_Arctg = new System.Windows.Forms.Button();
             this.btn_Tg = new System.Windows.Forms.Button();
+            this.btn_MinusX = new System.Windows.Forms.Button();
+            this.btn_Ln = new System.Windows.Forms.Button();
+            this.btn_Log2 = new System.Windows.Forms.Button();
+            this.btn_Log10 = new System.Windows.Forms.Button();
+            this.btn_ExpX = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // tb_InputOne
@@ -226,11 +231,66 @@
             this.btn_Tg.UseVisualStyleBackColor = true;
             this.btn_Tg.Click += new System.EventHandler(this.calculateForOneArgument);
             // 
+            // btn_MinusX
+            // 
+            this.btn_MinusX.Location = new System.Drawing.Point(12, 184);
+            this.btn_MinusX.Name = "btn_MinusX";
+            this.btn_MinusX.Size = new System.Drawing.Size(90, 30);
+            this.btn_MinusX.TabIndex = 21;
+            this.btn_MinusX.Text = "-x";
+            this.btn_MinusX.UseVisualStyleBackColor = true;
+            this.btn_MinusX.Click += new System.EventHandler(this.calculateForOneArgument);
+            // 
+            // btn_Ln
+            // 
+            this.btn_Ln.Location = new System.Drawing.Point(108, 183);
+            this.btn_Ln.Name = "btn_Ln";
+            this.btn_Ln.Size = new System.Drawing.Size(90, 30);
+            this.btn_Ln.TabIndex = 20;
+            this.btn_Ln.Text = "Ln";
+            this.btn_Ln.UseVisualStyleBackColor = true;
+            this.btn_Ln.Click += new System.EventHandler(this.calculateForOneArgument);
+            // 
+            // btn_Log2
+            // 
+            this.btn_Log2.Location = new System.Drawing.Point(12, 219);
+            this.btn_Log2.Name = "btn_Log2";
+            this.btn_Log2.Size = new System.Drawing.Size(90, 30);
+            this.btn_Log2.TabIndex = 19;
+            this.btn_Log2.Text = "Log2";
+            this.btn_Log2.UseVisualStyleBackColor = true;
+            this.btn_Log2.Click += new System.EventHandler(this.calculateForOneArgument);
+            // 
+            // btn_Log10
+            // 
+            this.btn_Log10.Location = new System.Drawing.Point(108, 219);
+            this.btn_Log10.Name = "btn_Log10";
+            this.btn_Log10.Size = new System.Drawing.Size(90, 30);
+            this.btn_Log10.TabIndex = 18;
+            this.btn_Log10.Text = "Log10";
+            this.btn_Log10.UseVisualStyleBackColor = true;
+            this.btn_Log10.Click += new System.EventHandler(this.calculateForOneArgument);
+            // 
+            // btn_ExpX
+            // 
+            this.btn_ExpX.Location = new System.Drawing.Point(12, 255);
+            this.btn_ExpX.Name = "btn_ExpX";
+            this.btn_ExpX.Size = new System.Drawing.Size(90, 30);
+            this.btn_ExpX.TabIndex = 22;
+            this.btn_ExpX.Text = "exp(x)";
+            this.btn_ExpX.UseVisualStyleBackColor = true;
+            this.btn_ExpX.Click += new System.EventHandler(this.calculateForOneArgument);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(439, 271);
+            this.ClientSize = new System.Drawing.Size(403, 306);
+            this.Controls.Add(this.btn_ExpX);
+            this.Controls.Add(this.btn_MinusX);
+            this.Controls.Add(this.btn_Ln);
+            this.Controls.Add(this.btn_Log2);
+            this.Controls.Add(this.btn_Log10);
             this.Controls.Add(this.btn_Tg);
             this.Controls.Add(this.btn_Arctg);
             this.Controls.Add(this.btn_Arcsin);
@@ -276,6 +336,11 @@
         private System.Windows.Forms.Button btn_Arcsin;
         private System.Windows.Forms.Button btn_Arctg;
         private System.Windows.Forms.Button btn_Tg;
+        private System.Windows.Forms.Button btn_MinusX;
+        private System.Windows.Forms.Button btn_Ln;
+        private System.Windows.Forms.Button btn_Log2;
+        private System.Windows.Forms.Button btn_Log10;
+        private System.Windows.Forms.Button btn_ExpX;
     }
 }
 

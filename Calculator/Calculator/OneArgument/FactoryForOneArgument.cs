@@ -24,6 +24,16 @@ namespace Calculator.OneArgument
                     return new Arccos();
                 case "btn_Arctg":
                     return new Arctg();
+                case "btn_ExpX":
+                    return new ExpX();
+                case "btn_Ln":
+                    return new Ln();
+                case "btn_Log2":
+                    return new Log2();
+                case "btn_Log10":
+                    return new Log10();
+                case "btn_MinusX":
+                    return new MinusX();
                 default:
                     throw new Exception("Неизвестная операция");
             }

@@ -48,6 +48,11 @@
     <Compile Include="OneArgument\Arccos.cs" />
     <Compile Include="OneArgument\Arcsin.cs" />
     <Compile Include="OneArgument\Arctg.cs" />
+    <Compile Include="OneArgument\ExpX.cs" />
+    <Compile Include="OneArgument\Ln.cs" />
+    <Compile Include="OneArgument\Log10.cs" />
+    <Compile Include="OneArgument\Log2.cs" />
+    <Compile Include="OneArgument\MinusX.cs" />
     <Compile Include="OneArgument\Tg.cs" />
     <Compile Include="TwoArgumets\Addition.cs" />
     <Compile Include="OneArgument\Cos.cs" />
