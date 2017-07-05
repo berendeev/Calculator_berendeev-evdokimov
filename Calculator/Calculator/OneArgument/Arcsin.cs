@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Calculator.OneArgument
 {
-    class Arcsin : IOperationsForOneArgument
+    public class Arcsin : IOperationsForOneArgument
     {
         public double Calculate(double Argument)
         {
