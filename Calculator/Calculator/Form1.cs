@@ -33,8 +33,16 @@ namespace Calculator
         private void calculateForOneArgument(object sender, EventArgs e)
         {
             double argument = Convert.ToDouble(tb_InputOne.Text);
-            IOperationsForOneArgument calculator = FactoryForOneArgument.CreateCalculator(((Button)sender).Name);
-            lbl_Equally.Text = Convert.ToString(calculator.Calculate(argument));
+            try
+            {
+                IOperationsForOneArgument calculator = FactoryForOneArgument.CreateCalculator(((Button)sender).Name);
+                lbl_Equally.Text = Convert.ToString(calculator.Calculate(argument));
+            }
+            catch (Exception exc)
+            {
+                lbl_Equally.Text = exc.Message;
+            }
+            
         }
     }
 

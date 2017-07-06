@@ -4,24 +4,23 @@ using NUnit.Framework;
 
 namespace Calculator.Tests.TwoArguments
 {
-    public class DivisionTest
+    public class LogxYTest
     {
-        [TestCase(8, 2, 4)]
-        [TestCase(48, 48, 1)]
-        [TestCase(8, 4, 2)]
+        [TestCase(2, 8, 3)]
+        [TestCase(3, 9, 2)]
+        [TestCase(4, 64, 3)]
         public void CalculateTest(double firstArgument, double seconArgument, double expected)
         {
-            
-            IOperationsForTwoArguments calculator = new Division();
+            IOperationsForTwoArguments calculator = new LogxY();
             double result = calculator.Calculate(firstArgument, seconArgument);
             Assert.AreEqual(expected, result);
         }
-        [Test]
-        public void DivisionByZeroTest()
-        {
-            var calculate = new Division();
-            Assert.Throws<Exception>(() => calculate.Calculate(1,0));
 
+        [Test]
+        public void UncorrectLog()
+        {
+            var calculate = new LogxY();
+            Assert.Throws<Exception>(() => calculate.Calculate(2, -1));
         }
     }
 }

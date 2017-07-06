@@ -61,7 +61,10 @@
     <Compile Include="TwoArguments\AdditionTest.cs" />
     <Compile Include="TwoArguments\FactoryForTwoArgumentsTest.cs" />
     <Compile Include="TwoArguments\DivisionTest.cs" />
+    <Compile Include="TwoArguments\LogxYTest.cs" />
     <Compile Include="TwoArguments\MultiplicationTest.cs" />
+    <Compile Include="TwoArguments\PowerXrevYTest.cs" />
+    <Compile Include="TwoArguments\PowerXYTest.cs" />
     <Compile Include="TwoArguments\SubtractionTest.cs" />
   </ItemGroup>
   <ItemGroup>

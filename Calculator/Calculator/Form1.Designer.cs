@@ -71,7 +71,7 @@
             // 
             this.lbl_Equally.Location = new System.Drawing.Point(225, 12);
             this.lbl_Equally.Name = "lbl_Equally";
-            this.lbl_Equally.Size = new System.Drawing.Size(102, 20);
+            this.lbl_Equally.Size = new System.Drawing.Size(165, 20);
             this.lbl_Equally.TabIndex = 2;
             // 
             // btn_Plus
