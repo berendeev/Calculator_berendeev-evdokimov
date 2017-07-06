@@ -2,8 +2,16 @@
 
 namespace Calculator.TwoArgumets
 {
+    /// <summary>
+    /// For creat calculator
+    /// </summary>
     public class FactoryForTwoArguments
     {
+        /// <summary>
+        /// For creat calculator
+        /// </summary>
+        /// <param name="name">Name of button</param>
+        /// <returns>Class of the required calculator</returns>
         public static IOperationsForTwoArguments CreateCalculator(string name)
         {
             switch (name)

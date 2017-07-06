@@ -2,8 +2,16 @@
 
 namespace Calculator.OneArgument
 {
+    /// <summary>
+    /// For creat calculator
+    /// </summary>
    public class FactoryForOneArgument
     {
+        /// <summary>
+        /// For creat calculator
+        /// </summary>
+        /// <param name="name">Name of button</param>
+        /// <returns>Class of the required calculator</returns>
         public static IOperationsForOneArgument CreateCalculator(string name)
         {
             switch(name)
